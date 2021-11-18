@@ -99,7 +99,7 @@ if __name__ == "__main__":
         alice = EvilAgent("./objects/alice.json")
         bob.intersect(alice.sendEvilHashSet())
     elif(sys.argv[1] == "-c"):
-        # CASE 2 (MALICIOUS SENDER)
+        # CASE 3 (MALICIOUS RECIEVER)
         bob = EvilAgent("./objects/bob.json")
         alice = Agent("./objects/alice.json")
         bob.evilIntersect(alice.sendHashSet())
