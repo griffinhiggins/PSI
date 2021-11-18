@@ -6,8 +6,8 @@ Using the SHA256 algorithm we achieve some basic security requirements for addre
 
 However, this assumption is naïve since the set of comparable elements being hashed are usually small (e.g.: the names of people, email addresses, IP’s). This means that a malicious sender or receiver could easily brute force guess the hashes of elements in the intersection or difference. We can improve this example by requiring Alice and Evil Bob hash sets of objects instead of elements. By rehashing elements in the object along with the previous hash and some random session key computational security is increased against malicious inside threats. However, this is only a moderate improvement if the elements are simple but effective in either case if the elements are complex (e.g.: a multi-page document, ssh-keys, or complex passwords). Lastly, the Diffie-Hellman protocol can be implemented instead of relying on hashing sufficiently complex elements or large collections of object elements. Conceptually the idea remains the same except the security is derived from the discrete log problem which is much harder.
 
-##Element Wise
+## Element Wise PSI (26 elements)
 ![alt text](./elements.png "elements")
 
-##Object Wise
+## Object Wise PSI (26^3 ~ 2^14 objects)
 ![alt text](./objects.png "objects")
